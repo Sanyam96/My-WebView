@@ -14,12 +14,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
+        mWebView = (WebView) findViewById(R.id.webView);
+
         // Enable Javascript
         WebSettings webSettings = mWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
 
-        mWebView = (WebView) findViewById(R.id.webView);
-        //browser.loadUrl("https://ideone.com/EImE6H");
-        mWebView.loadUrl("https://www.google.co.in");
+        mWebView.loadUrl("https://ideone.com/EImE6H");
+        //mWebView.loadUrl("https://www.google.co.in");
     }
 }
